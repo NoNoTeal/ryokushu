@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ryokushu",
+  "version": "${version}",
+  "name": "drawme",
+  "description": "Create images in Minecraft using armorstands",
+  "authors": ["teal"],
+  "contact": {
+    "repo": "https://github.com/nonoteal/drawme"
+  },
+  "license": "MIT",
+  "icon": "assets/drawme/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "teal.drawme.Drawme"
+    ],
+    "modmenu": [
+      "teal.drawme.modmenu.ModMenu"
+    ]
+  },
+  "mixins":  [
+    "drawme.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "accessWidener": "drawme.accesswidener"
+}

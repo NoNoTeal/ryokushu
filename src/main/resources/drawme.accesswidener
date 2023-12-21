@@ -1,0 +1,9 @@
+accessWidener   v2  named
+# Just let me fuck with the title screen splash
+accessible field net/minecraft/client/resource/SplashTextResourceSupplier splashTexts Ljava/util/List;
+
+# Accomodate 1.20 text displays
+accessible method net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity setDisplayFlags (B)V
+accessible method net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity setBackground (I)V
+accessible method net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity setLineWidth (I)V
+accessible method net/minecraft/entity/decoration/DisplayEntity$TextDisplayEntity setText (Lnet/minecraft/text/Text;)V
